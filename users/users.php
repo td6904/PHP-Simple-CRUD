@@ -98,3 +98,31 @@ function putJson($users)
    //^^This function makes my inputted data in update.php get to users.json, but to get it to refresh/update on page we're
 //on we have to do other stuff.
 }
+
+function validateUser($user, &$errors)
+{
+   $isValid = true;
+   
+if (!$user['name']){
+   $isValid = false;
+   $errors['name'] = 'Name is mandatory';
+}
+
+if (!$user['username'] || strlen($user['username']) < 6 || strlen($user['username']) > 16){
+   $isValid = false;
+   $errors['username'] = 'Username is mandatory, must be between 6 and 16 characters';
+}
+//Stuck here, data not posting now and username always showing error when should be valid.
+//Pwoah watchout - bracket was messing up the username validation! ^^^^^
+if ($user['email'] && !filter_var($user['email'], FILTER_VALIDATE_EMAIL)){
+   $isValid = false;
+   $errors['email'] = 'Must be a valid email';
+}
+
+if (!filter_var($user['phone'], FILTER_VALIDATE_INT)){
+   $isValid = false;
+   $errors['phone'] = 'Must be a valid phone number';
+}
+
+return $isValid;
+}

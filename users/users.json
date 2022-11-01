@@ -44,21 +44,21 @@
         "website": "ambrose.net"
     },
     {
-        "name": "John Doe",
-        "username": "john22",
-        "email": "",
-        "phone": "12345",
-        "website": "",
-        "id": 1879571,
-        "extension": "jpg"
-    },
-    {
         "name": "Jimmy D",
         "username": "JimD",
         "email": "jimmy@hotmail.com",
         "phone": "0887",
         "website": "jimmy.com",
         "id": 1506046,
+        "extension": "png"
+    },
+    {
+        "name": "Tyler",
+        "username": "td6904",
+        "email": "Johnsmith@smithy.com",
+        "phone": "1234512342",
+        "website": "jimmy.com",
+        "id": 1438898,
         "extension": "png"
     }
 ]
