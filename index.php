@@ -31,7 +31,7 @@ include 'partials/header.php';
         <tr>
             <td>
                 <?php  if (isset($user['extension'])): ?>
-                        <img style="width: 60px" src="<?php echo "users/images/${user['id']}.${user['extension']}" ?>" alt="">
+                        <img style="width: 60px" src="<?php echo "users/images/{$user['id']}.{$user['extension']}" ?>" alt="">
                     <?php  endif; ?> 
                                                                <!--Watch out, curly braces not normal here^^^ -->
             </td>

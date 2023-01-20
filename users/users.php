@@ -80,7 +80,7 @@ function uploadImage($file, $user){
   $dotPosition = strpos($filename, needle: '.');
   //Take the substring from the dot position 'till the end
   $extension = substr($filename, $dotPosition + 1);
-  move_uploaded_file($file['tmp_name'], __DIR__."/images/${user['id']}.$extension");
+  move_uploaded_file($file['tmp_name'], __DIR__."/images/{$user['id']}.$extension");
       //^^^ Really cool this
   $user['extension'] = $extension;
   updateUser($user, $user['id']);
