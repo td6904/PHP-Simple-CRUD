@@ -119,10 +119,10 @@ if ($user['email'] && !filter_var($user['email'], FILTER_VALIDATE_EMAIL)){
    $errors['email'] = 'Must be a valid email';
 }
 
-if (!filter_var($user['phone'], FILTER_VALIDATE_INT)){
-   $isValid = false;
-   $errors['phone'] = 'Must be a valid phone number';
-}
+// if (!filter_var($user['phone'], FILTER_VALIDATE_INT)){
+//    $isValid = false;
+//    $errors['phone'] = 'Must be a valid phone number';
+// }
 
 return $isValid;
 }

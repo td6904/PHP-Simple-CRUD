@@ -1,4 +1,4 @@
-# PHPSimpleCRUD-FS
+# Tutorial creator's notes
 Simple PHP CRUD application with data saved in JSON file
 
 ## Features
@@ -11,7 +11,7 @@ Simple PHP CRUD application with data saved in JSON file
 
 The project was created while recording [youtube video](https://youtu.be/DWHZSkn5paQ)
 
-### MY_NOTES ###
+### MY NOTES ###
 
 Had trouble uploading picture like he done from 33m onwards. Make sure file path is correct, and forgot I had to upload a jpg photo haha. Had trouble with the tmp name part. I was writing tmp-name and not tmp_name and it was mucking everything up!
 
@@ -22,4 +22,7 @@ Deleting with 'GET' request not very secure! Unset() good but users keep their I
 'POST' is better.
 
 Security from 1h09m
+
+Seems to be an error with the phone error verification. I am entering a valid phone number but it doesn't like it. Leaving it behind to test the rest of the application, the error handling is commented out at:
+# Users.php line 122
 
