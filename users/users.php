@@ -126,3 +126,4 @@ if ($user['email'] && !filter_var($user['email'], FILTER_VALIDATE_EMAIL)){
 
 return $isValid;
 }
+
